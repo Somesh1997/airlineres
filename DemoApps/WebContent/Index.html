@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+.w3-black,.w3-hover-black:hover
+{color:black!important;background-color:rgba(255, 99, 71, 0)!important}
+.w3-bar .w3-bar-item-left{padding-left:10px; float:left;width:auto;border:none;display:block;outline:0;color:#9BE0F7}
+.w3-bar .w3-bar-item{padding:8px 16px;float:right;width:auto;border:none;display:block;outline:0}
+.w3-bar .w3-dropdown-hover,.w3-bar .w3-dropdown-click{position:static;float:left}
+.w3-bar .w3-button{white-space:normal}
+.w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.w3-bar-block.w3-center .w3-bar-item{text-align:center}.w3-block{display:block;width:100%}
+.w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
+.w3-green,.w3-hover-green:hover{color:#fff!important;background-color:#9BE0F7!important;}
+</style>
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+<!-- Datepicker CSS -->
+<link rel="stylesheet" href="static/css/wbn-datepicker.css">
+</head>
+<body style="font-family:Alata; background-image: url('/DemoApps/images/Image2.jpg'); background-size:cover; background-repeat: no-repeat;background-attachment:fixed;">
+
+<div class="w3-bar w3-block" style="padding: 10px">
+  <div class="w3-bar-item-left"><span style="font-size: 40px;"><a style="text-decoration: none; padding-left: 15px; color: black;" href="https://google.com"><img src="images/Flight.png" width="40" height="40"> SAVAN Airlines</a></span></div>
+  <div class="w3-bar-item w3-hover-green"><a style="text-decoration: none; color: black;" href="https://google.com">Contact Us</a></div>
+  <div class="w3-bar-item w3-hover-green"><a style="text-decoration: none; color: black;" href="https://google.com">Web Check-in</a></div>
+  <div class="w3-bar-item w3-hover-green"><a style="text-decoration: none; color: black;" href="https://google.com">Login</a></div>
+  <div class="w3-bar-item w3-hover-green "><a style="text-decoration: none; color: black;" href="https://google.com">Sign Up</a></div>
+</div>
+
+<br><br>
+
+<div class="col-md-4" style="border: 1px solid white; border-radius: 10px; background-color: white; padding: 20px; float:right; margin:20px;">
+	<h3 style="padding-bottom: 20px">Book A Flight</h3>
+	<form class="needs-validation" novalidate>
+  <div class="form-row" style="padding-bottom: 20px;">
+	<div class="form-group  col-md-6 mb-3">
+    	<label for="exampleFormControlSelect1">From</label>
+    	<select class="form-control" id="flights" autofocus>
+    		<option selected hidden>From</option>
+      		<option>Bangalore-BLR</option>
+     		<option>Delhi-DEL</option>
+     		<option>Mumbai-BOM</option>
+      		<option>Kolkata-CCU</option>
+    	</select>
+    </div>
+   
+    <div class="form-group  col-md-6 mb-3">
+    	<label for="exampleFormControlSelect1">To</label>
+    	<select class="form-control" id="flights">
+    		<option selected hidden>To</option>
+      		<option>Bangalore-BLR</option>
+     		<option>Delhi-DEL</option>
+     		<option>Mumbai-BOM</option>
+      		<option>Kolkata-CCU</option>
+    	</select>
+    </div>
+    
+  </div>
+  <div class="form-row" style="padding-bottom: 20px;">
+    <div class="col-md-6 mb-3 form-group">
+      <label for="validationCustom04">Departure Date</label>	
+     <input
+       placeholder="Departure Date"
+       type="text" 
+       id="value-specified" 
+       name="value_specified"
+       class="form-control wbn-datepicker"
+       data-min="2019-04-11"
+       data-max="2019-31-12" />
+      <div class="invalid-feedback">
+        Please provide a valid date.
+      </div>
+    </div>
+    
+    <div class="form-group col-md-4" style="padding-bottom:10px">
+    <label for="exampleFormControlSelect1">Passengers</label>
+    <select class="form-control" id="passengers">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+    </select>
+    </div>
+    
+    <div class="form-check" style="padding-left:30px">
+    	<h5>Class</h5>
+  		<input class="form-check-input" type="radio" name="class" id="exampleRadios1" value="economy" checked>
+  		<label class="form-check-label" for="exampleRadios1" style="padding-bottom:10px">
+    		Economy
+ 		</label>
+ 		
+ 		<br>
+ 		
+ 		<input class="form-check-input" type="radio" name="class" id="exampleRadios1" value="premium">
+  		<label class="form-check-label" for="exampleRadios1" style="padding-bottom:10px">
+    		Premium Economy
+  		</label>
+  		
+  		<br>
+  		
+  		<input class="form-check-input" type="radio" name="class" id="exampleRadios1" value="business">
+  		<label class="form-check-label" for="exampleRadios1">
+    		Business
+  		</label>
+	</div>
+    
+  </div>
+  
+  <button class="btn btn-primary" type="submit" style="margin-left: 35%;">Search Flight</button>
+</form>
+	
+</div>
+
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<!-- Datepicker Js -->
+<script src="static/js/wbn-datepicker.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+$(document).ready(function(){
+
+	   $('.wbn-datepicker').datepicker({ minDate: new Date(), maxDate: "+1M" });
+
+	});
+</script>
+
+</body>
+</html>

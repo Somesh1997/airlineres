@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+<style>
+<!--
+Navbar -->.w3-black, .w3-hover-black:hover {
+	color: black !important;
+	background-color: rgba(255, 99, 71, 0) !important
+}
+
+.w3-bar .w3-bar-item-left {
+	padding-left: 10px;
+	float: left;
+	width: auto;
+	border: none;
+	display: block;
+	outline: 0;
+	color: #9BE0F7
+}
+
+.w3-bar .w3-bar-item {
+	padding: 8px 16px;
+	float: right;
+	width: auto;
+	border: none;
+	display: block;
+	outline: 0
+}
+
+.w3-bar .w3-dropdown-hover, .w3-bar .w3-dropdown-click {
+	position: static;
+	float: left
+}
+
+.w3-bar .w3-button {
+	white-space: normal
+}
+
+.w3-bar-block .w3-bar-item {
+	width: 100%;
+	display: block;
+	padding: 8px 16px;
+	text-align: left;
+	border: none;
+	white-space: normal;
+	float: none;
+	outline: 0
+}
+
+.w3-bar-block.w3-center .w3-bar-item {
+	text-align: center
+}
+
+.w3-block {
+	display: block;
+	width: 100%
+}
+
+.w3-bar-item.w3-mobile, .w3-dropdown-hover.w3-mobile, .w3-dropdown-click.w3-mobile
+	{
+	text-align: center
+}
+
+.w3-green, .w3-hover-green:hover {
+	color: #fff !important;
+	background-color: #9BE0F7 !important;
+}
+</style>
+
+<title>SAVAN Airlines</title>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Datepicker CSS -->
+<link rel="stylesheet" href="static/css/wbn-datepicker.css">
+
+</head>
+
+<body
+	style="font-family: Alata; background-image: url('/DemoApps/images/FlightDetails.jpg'); background-size: cover; 
+	background-repeat: no-repeat; background-attachment: fixed; background-position: center; height: 100%">
+
+	<div class="w3-bar w3-block" style="padding: 10px">
+		<div class="w3-bar-item-left">
+			<span style="font-size: 40px;"> <a
+				style="text-decoration: none; padding-left: 15px; color: white;"
+				href="AdminDashboard.jsp"> <img src="images/Flight.png" width="40"
+					height="40"> SAVAN Airlines
+			</a>
+			</span>
+		</div>
+
+	</div>
+
+	<br>
+	<br>
+	<br>
+
+	<div class="container">
+	
+		<h1 style="color: #0af5e5">Details for all Flights Date Wise</h1>
+		
+		<br>
+		
+		<button type="button" class="btn btn-success" style="float: right">Create New Flight</button>
+
+		<table class="table table-hover table-borderless table-responsive">
+			<thead>
+				<tr style="color: #0d9dd6">
+					<th scope="col">#</th>
+					<th scope="col">Flight Number</th>
+					<th scope="col">Flight Name</th>
+					<th scope="col">Source</th>
+					<th scope="col">Departure Time</th>
+					<th scope="col">Destination</th>
+					<th scope="col">Arrival Time</th>
+					<th scope="col">Duration</th>
+					<th scope="col">Cost</th>
+					<th scope="col" colspan="2">Operations</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td><button type="button" class="btn btn-warning btn-sm">Edit</button></td>
+					<td><button type="button" class="btn btn-danger btn-sm">Delete</button></td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td>@fat</td>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td>@fat</td>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td><button type="button" class="btn btn-warning btn-sm">Edit</button></td>
+					<td><button type="button" class="btn btn-danger btn-sm">Delete</button></td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>Larry the Bird</td>
+					<td>@twitter</td>
+					<td>@thin</td>
+					<td>Larry the Bird</td>
+					<td>@twitter</td>
+					<td>@thin</td>
+					<td>Larry the Bird</td>
+					<td>@twitter</td>
+					<td><button type="button" class="btn btn-warning btn-sm">Edit</button></td>
+					<td><button type="button" class="btn btn-danger btn-sm">Delete</button></td>
+				</tr>
+				<tr>
+					<th scope="row">4</th>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td><button type="button" class="btn btn-warning btn-sm">Edit</button></td>
+					<td><button type="button" class="btn btn-danger btn-sm">Delete</button></td>
+				</tr>
+				<tr>
+					<th scope="row">5</th>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td>@fat</td>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td>@fat</td>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td><button type="button" class="btn btn-warning btn-sm">Edit</button></td>
+					<td><button type="button" class="btn btn-danger btn-sm">Delete</button></td>
+				</tr>
+				<tr>
+					<th scope="row">6</th>
+					<td>Larry the Bird</td>
+					<td>@twitter</td>
+					<td>@thin</td>
+					<td>Larry the Bird</td>
+					<td>@twitter</td>
+					<td>@thin</td>
+					<td>Larry the Bird</td>
+					<td>@twitter</td>
+					<td><button type="button" class="btn btn-warning btn-sm">Edit</button></td>
+					<td><button type="button" class="btn btn-danger btn-sm">Delete</button></td>
+				</tr>
+			</tbody>
+		</table>
+
+
+	</div>
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+	<!-- jQuery UI -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
